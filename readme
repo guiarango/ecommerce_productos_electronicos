@@ -1,0 +1,14 @@
+Fran. Comienzo con la App de Inicio.
+Backend:
+-Creo la app python3 manage.py startapp Base
+-Agrego la app en settings.py
+-Creo la vista de Inicio
+-Conecto las urls de Base con las urls del proyecto
+-Creo una url para la vista de Home/Inicio.
+Frontend:
+-Creo 'templates' en la App
+-Agrego static, assets y css para darle estilo a la plantilla
+-Creo 'home.html'
+-Cargo static en el html
+-Vuelvo a views.py y conecto la plantilla a la vista
+-Agrego nuevos elementos en style.css para modificar a mi gusto la plantilla original.
