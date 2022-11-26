@@ -3,7 +3,7 @@ Backend:
 -Creo la app python3 manage.py startapp Base
 -Agrego la app en settings.py
 -Creo la vista de Inicio
--Conecto las urls de Base con las urls del proyecto
+-Conecto las urls de Home con las urls del proyecto
 -Creo una url para la vista de Home/Inicio.
 Frontend:
 -Creo 'templates' en la App
