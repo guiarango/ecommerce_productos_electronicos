@@ -1,0 +1,61 @@
+{% extends 'Home/base.html'%}
+
+
+{% block contenido %}
+
+    {% load static %}
+    <!-- Header-->
+
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Acerca de nosotros</h1>
+        </div>
+    </div>
+
+    <p class="container px-4 text-center lead fw-normal text-white-50 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum ullam, autem possimus voluptas nisi pariatur facere vitae inventore corrupti accusamus ea neque iusto placeat reiciendis quam dolorem dolore itaque.</p>
+
+    <h2 class="container px-4 text-center display-4 fw-bolder text-white mb-5">Fundadores</h1>
+
+    <!--Desplegable de fundadores-->
+    
+    <div class="contenedor-acordiones">
+    <button class="accordion">Fundador 1 <span>+</span></button>
+        <div class="panel">
+            <div class="contenedor-imagen">
+                <img src="{% static 'Home/assets/img/imac.png' %}" alt="#">
+            </div>
+            <div class="contenedor-informacion">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequuntur praesentium dolorem. Possimus impedit autem totam, amet fugiat sit esse ut repellendus culpa doloribus sint quidem tenetur accusamus aut nobis.</p>
+            </div>
+            
+        </div>
+
+    <button class="accordion">Fundador 2 <span>+</span></button>
+        <div class="panel">
+            <div class="contenedor-imagen">
+                <img src="{% static 'Home/assets/img/imac.png' %}" alt="#">
+            </div>
+            <div class="contenedor-informacion">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis incidunt, ipsa placeat veritatis modi molestias officiis reiciendis ratione ea? Nostrum beatae modi aliquid nobis fugiat eveniet libero quam minus fugit!</p>
+            </div>
+        </div>
+
+    <button class="accordion">Fundador 3 <span>+</span></button>
+        <div class="panel">
+            <div class="contenedor-imagen">
+                <img src="{% static 'Home/assets/img/imac.png' %}" alt="#">
+            </div>
+            <div class="contenedor-informacion">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi perferendis soluta pariatur, eum dolores voluptatibus dolore totam amet, voluptate repudiandae facere distinctio nobis. Similique animi quam repudiandae. Unde, autem cumque!</p>
+            </div>
+        </div>
+
+    </div>
+    
+    
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'Home/js/accordion.js' %}"></script>
+{% endblock %}
