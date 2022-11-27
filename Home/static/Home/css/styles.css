@@ -11,6 +11,75 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+/* FORMULARIOS */
+form {
+  margin: 30px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+}
+
+input[type="text"],
+input[type="number"],
+label {
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: rgb(6, 128, 87);
+  padding: 8px;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 5px 0;
+  width: 90%;
+}
+
+textarea {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  form {
+    margin: 40px auto;
+    width: 50%;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  label {
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    background-color: rgb(6, 128, 87);
+    color: white;
+    padding: 8px;
+    margin-top: 20px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
 /*ACCORDION STYLES*/
 .contenedor-acordiones {
   margin: auto;
@@ -36,6 +105,7 @@
 
 .contenedor-imagen img {
   width: 150px;
+  margin: 10px 0;
 }
 
 .contenedor-informacion {
@@ -48,6 +118,7 @@
 @media (min-width: 600px) {
   .contenedor-imagen img {
     width: 200px;
+    margin: 10px 0;
   }
 
   .contenedor-informacion {
@@ -60,6 +131,7 @@
 @media (min-width: 800px) {
   .contenedor-imagen img {
     width: 250px;
+    margin: 10px 0;
   }
 
   .contenedor-informacion {
@@ -72,6 +144,7 @@
 @media (min-width: 1000px) {
   .contenedor-imagen img {
     width: 350px;
+    margin: 10px 0;
   }
 
   .contenedor-informacion {
@@ -93,6 +166,22 @@
   overflow: hidden;
   align-items: center;
   justify-content: flex-start;
+}
+
+.editar-fundador,
+.eliminar-fundador {
+  color: white;
+  padding: 8px;
+  margin-top: 20px;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  text-decoration: none;
+}
+
+.editar-fundador {
+  background-color: rgb(6, 128, 87);
+}
+.eliminar-fundador {
+  background-color: rgb(201, 48, 10);
 }
 
 :root {
