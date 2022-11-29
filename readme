@@ -35,3 +35,9 @@ Bar:
 -Esta informacion se almacena en un diccionario (con esta podemos ver los que se guarda en el diccionario{{request.POST}})
 -datos de confinguracion de una cuenta de correo electronico "email"(nombre usuario , contraseña , direccion host , puerto , autenticacion)
 -cree gmail de prueba  exclusivo para proyectoweb (barbargustavomili@gmail.com)
+-app tienda (categoria +producto)
+-modelos,registro en admin.
+-creacion de vistas ,urls,templates
+-app carro de compras (tareas a realizar)
+-manejo de sesion ,agregarrestar , eliminar productos 
+-vaciar carro

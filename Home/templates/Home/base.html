@@ -25,8 +25,7 @@
       rel="stylesheet"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{% static 'Home/css/styles.css' %}" rel="stylesheet" />
- 
+    <link href="{% static 'home/css/styles.css' %}" rel="stylesheet">
   </head>
 
   <body>
@@ -41,8 +40,6 @@
         <a href="{% url 'logear' %}" style="color:white;" > Login </a> &nbsp;&nbsp;&nbsp;<a href="{% url 'Autenticacion' %}"style="color:white;" >Registrate </a>
 
       {% endif %}
-
-
 
       </div>
 
@@ -68,8 +65,16 @@
                 style="color: white"
                 class="nav-link active"
                 aria-current="page"
-                href="http://127.0.0.1:8000/eureka/home"
-                >Inicio</a
+                href="{% url 'home'%}"
+                >INICIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                style="color: white"
+                class="nav-link"
+                href="{%url 'tienda'%}"
+                >TIENDA</a
               >
             </li>
             <li class="nav-item">
@@ -77,7 +82,7 @@
                 style="color: white"
                 class="nav-link"
                 href="{%url 'contacto'%}"
-                >Contacto</a
+                >CONTACTO</a
               >
             </li>
             <li class="nav-item">
@@ -105,6 +110,7 @@
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="#!">Categorias</a></li>
+                <li><a class="dropdown-item" href="#!">SALE</a></li>
                 <li><a class="dropdown-item" href="#!">SALE</a></li>
               </ul>
             </li>
