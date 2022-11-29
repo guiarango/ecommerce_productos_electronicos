@@ -19,29 +19,35 @@
       href="{% static 'Home/assets/favicon.ico' %}"
     />
     <!-- Bootstrap icons-->
-    <link href="{% static 'home/vendor/bootstrap/css/bootstrapp.min.css' %}" rel="stylesheet">
+    <link
+      href="{% static 'home/vendor/bootstrap/css/bootstrapp.min.css' %}"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
       rel="stylesheet"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{% static 'home/css/styles.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/styles.css' %}" rel="stylesheet" />
   </head>
 
   <body>
-    <div style=" text-align:right;margin-right:100px;color:white;">
-
-      {% if user.is_authenticated %}
-
-        Hola {{ user.username }} &nbsp; &nbsp;<a href="{% url 'cerrar_sesion'  %}" style="color:white;">cerrar sesion</a>
+    <div style="text-align: right; margin-right: 100px; color: white">
+      {% if user.is_authenticated %} Hola {{ user.username }} &nbsp; &nbsp;<a
+        href="{% url 'cerrar_sesion'  %}"
+        style="color: white"
+        >cerrar sesion</a
+      >
 
       {% else %}
 
-        <a href="{% url 'logear' %}" style="color:white;" > Login </a> &nbsp;&nbsp;&nbsp;<a href="{% url 'Autenticacion' %}"style="color:white;" >Registrate </a>
+      <a href="{% url 'logear' %}" style="color: white"> Login </a>
+      &nbsp;&nbsp;&nbsp;<a href="{% url 'Autenticacion' %}" style="color: white"
+        >Registrate
+      </a>
 
       {% endif %}
-
-      </div>
+    </div>
 
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-black">
@@ -70,18 +76,12 @@
               >
             </li>
             <li class="nav-item">
-              <a
-                style="color: white"
-                class="nav-link"
-                href="{%url 'tienda'%}"
+              <a style="color: white" class="nav-link" href="{%url 'tienda'%}"
                 >TIENDA</a
               >
             </li>
             <li class="nav-item">
-              <a
-                style="color: white"
-                class="nav-link"
-                href="{%url 'contacto'%}"
+              <a style="color: white" class="nav-link" href="{%url 'contacto'%}"
                 >CONTACTO</a
               >
             </li>
@@ -119,11 +119,7 @@
       </div>
     </nav>
 
-    {% block contenido %}
-     
-
-
-    {% endblock %}
+    {% block contenido %} {% endblock %}
 
     <!-- Footer-->
     <footer class="py-5 bg-dark">
@@ -137,7 +133,6 @@
     <script src="{%static 'home/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <!-- Core theme JS-->
     <script src="{% static 'Home/js/scripts.js' %}"></script>
-
-  
+    {%block scripts%}{%endblock%}
   </body>
 </html>
