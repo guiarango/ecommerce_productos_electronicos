@@ -12,3 +12,26 @@ Frontend:
 -Cargo static en el html
 -Vuelvo a views.py y conecto la plantilla a la vista
 -Agrego nuevos elementos en style.css para modificar a mi gusto la plantilla original.
+Bar:
+-django startapp (contacto ,autenticacion )
+-vistas y urls
+-urls y templates
+-Formato a sitio web con bootstrap
+-Creacion de plantillas(templates)
+-Herencia de plantillas y estructura del sitio
+-models en  django documentation (meta option)
+-python install pilow (imagenes)
+-python manage.py makemigration
+-python manage.py migrate 
+-registro de app en el panel de administracion 
+-En settings.py tambien cambie el idioma LANGUAGE_CODE= 'es-eu'
+-Mostrar imagenes (guardar imagenes ,baje las img de pexeles)
+-creo formulario para buscar productos BBDD.(a futuro se modificara para vincularlo con al app tienda y contactopara )
+-construi App contacto (formulario )
+-usamos libreria form de django(documentacion)
+-formato al formulario (renderizar formularios )
+-creo formulario de usuario (formato al mismo ,django-crispy-form , bootstrap4 , css)
+-Envio de datos (la informacion la voy enviar utizando el metodo "POST")
+-Esta informacion se almacena en un diccionario (con esta podemos ver los que se guarda en el diccionario{{request.POST}})
+-datos de confinguracion de una cuenta de correo electronico "email"(nombre usuario , contraseña , direccion host , puerto , autenticacion)
+-cree gmail de prueba  exclusivo para proyectoweb (barbargustavomili@gmail.com)
