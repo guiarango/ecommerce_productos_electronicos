@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Home',
+    'Categorias',
+    'autenticacion',
+    'About',
+    'contacto',
 ]
 
 MIDDLEWARE = [
@@ -106,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
 #LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'es-eu'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 

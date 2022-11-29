@@ -32,19 +32,20 @@
   <body>
     <div style=" text-align:right;margin-right:100px;color:white;">
 
-      {% if user.is_authenticated %}
+    {% if user.is_authenticated %}
 
-        Hola {{ user.username }} &nbsp; &nbsp;<a href="{% url 'cerrar_sesion'  %}" style="color:white;">cerrar sesion</a>
+      Hola {{ user.username }} &nbsp; &nbsp;<a href="{% url 'cerrar_sesion'  %}" style="color:white;">cerrar sesion</a>
 
-      {% else %}
+    {% else %}
 
-        <a href="{% url 'logear' %}" style="color:white;" > Login </a> &nbsp;&nbsp;&nbsp;<a href="{% url 'Autenticacion' %}"style="color:white;" >Registrate </a>
+      <a href="{% url 'logear' %}" style="color:white;" > Login </a> &nbsp;&nbsp;&nbsp;<a href="{% url 'Autenticacion' %}"style="color:white;" >Registrate </a>
 
-      {% endif %}
+    {% endif %}
 
 
 
-      </div>
+    </div>
+
 
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-black">
@@ -68,7 +69,7 @@
                 style="color: white"
                 class="nav-link active"
                 aria-current="page"
-                href="http://127.0.0.1:8000/eureka/home"
+                href="http://127.0.0.1:8000/"
                 >Inicio</a
               >
             </li>
