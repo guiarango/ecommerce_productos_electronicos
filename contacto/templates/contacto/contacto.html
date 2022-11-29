@@ -1,0 +1,29 @@
+{% extends 'Home/base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+
+
+  <div class="contenedorFormulario">
+
+    {% if "valido" in request.GET %}
+ 
+    <p style="color:white;">informacion enviada correctamente , gracias</p>
+ 
+    {% endif %}
+ 
+   <form action="" method="POST" style="text-align:center;">
+     {% csrf_token %}
+     <table style="color:white; margin:20px auto ;">{{miFormulario.as_table}}</table>
+     <input type="submit" value="Enviar">
+   </form> 
+  </div>
+
+  
+  
+{% endblock %}
+{% block scripts %}
+    <script src="{%static 'Home/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{%static 'home/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+ {% endblock %}  

@@ -1,0 +1,44 @@
+{% extends 'Home/base.html'%} {% block contenido %} {% load static %}
+<!-- Header-->
+
+<div class="container px-4 px-lg-5 my-5">
+  <div class="text-center text-white">
+    <h1 class="display-4 fw-bolder">Listado fundadores</h1>
+  </div>
+</div>
+
+<!--Desplegable de fundadores-->
+
+<div class="contenedor-acordiones">
+  {%if fundadores%} {% for fundador in fundadores%}
+
+  <button class="accordion">{{fundador.nombre_completo}} <span>+</span></button>
+  <div class="panel">
+    <div class="contenedor-imagen">
+      <img src="{{fundador.imagen.url}}" alt="{{fundador.nombre_completo}}" />
+    </div>
+    <div class="contenedor-informacion">
+      <h2>{{fundador.nombre_completo}}</h2>
+      <p>{{fundador.historia}}</p>
+      <a
+        href="{%url 'about-editar-fundador' fundador.id%}"
+        class="editar-fundador"
+        >Editar</a
+      >
+
+      <a
+        href="{%url 'about-eliminar-fundador' fundador.id%}"
+        class="eliminar-fundador"
+        >Eliminar</a
+      >
+    </div>
+  </div>
+
+  {%endfor%} {%else%}
+  <p style="color: white !important">No hay Fundadores</p>
+  {%endif%}
+</div>
+
+{% endblock %} {% block scripts %}
+<script src="{% static 'Home/js/accordion.js' %}"></script>
+{% endblock %}
