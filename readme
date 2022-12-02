@@ -26,18 +26,22 @@ Bar:
 -registro de app en el panel de administracion 
 -En settings.py tambien cambie el idioma LANGUAGE_CODE= 'es-eu'
 -Mostrar imagenes (guardar imagenes ,baje las img de pexeles)
--creo formulario para buscar productos BBDD.(a futuro se modificara para vincularlo con al app tienda y contactopara )
+-creo formulario para buscar productos BBDD.(a futuro se modificara para vincularlo con al app tienda  y contactopara )
 -construi App contacto (formulario )
 -usamos libreria form de django(documentacion)
 -formato al formulario (renderizar formularios )
 -creo formulario de usuario (formato al mismo ,django-crispy-form , bootstrap4 , css)
--Envio de datos (la informacion la voy enviar utizando el metodo "POST")
+-formato al formulario ,aviso de error ,manejar sesion de usuario
+-Envio de datos (la informacion la voy enviar utilizando el metodo "POST")
 -Esta informacion se almacena en un diccionario (con esta podemos ver los que se guarda en el diccionario{{request.POST}})
 -datos de confinguracion de una cuenta de correo electronico "email"(nombre usuario , contraseña , direccion host , puerto , autenticacion)
--cree gmail de prueba  exclusivo para proyectoweb (barbargustavomili@gmail.com)
+-cree gmail de prueba  exclusivo para proyecto (barbargustavomili@gmail.com)
 -app tienda (categoria +producto)
 -modelos,registro en admin.
 -creacion de vistas ,urls,templates
 -app carro de compras (tareas a realizar)
--manejo de sesion ,agregarrestar , eliminar productos 
+-manejo de sesion ,agregar,restar , eliminar productos 
 -vaciar carro
+- creamos un archivo context_processor
+-creamos una variable global(settings )
+-creacion de widget para el carro

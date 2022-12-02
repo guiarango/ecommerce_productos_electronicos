@@ -3,6 +3,7 @@ from django.views.generic import View
 from django.contrib.auth.forms import UserCreationForm ,AuthenticationForm
 from django.contrib.auth import login , logout,authenticate
 from django.contrib import messages
+
 # Create your views here.
 
 class VRegistro(View):
@@ -18,12 +19,12 @@ class VRegistro(View):
       form=UserCreationForm(request.POST)
       
       if form.is_valid():
-          
-        usuario=form.save()
+         usuario=form.save()
       
-        login(request, usuario) 
+         login(request, usuario) 
       
-        return redirect('home')
+         return redirect('home')
+
       else:
          for msg in form.error_messages:
              messages.error(request,form.error_messages[msg])
