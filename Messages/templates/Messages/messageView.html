@@ -1,0 +1,10 @@
+{% extends 'Home/base.html'%} {% block contenido %} {%if errors%}
+<div style="color: red">{{errors}}</div>
+
+{%endif%}
+
+<form method="POST">
+  {%csrf_token%} {{formulario.as_p}}
+  <input type="submit" value="Enviar" />
+</form>
+{% endblock %}

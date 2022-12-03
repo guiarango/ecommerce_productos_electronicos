@@ -6,5 +6,5 @@ from carro.views import *
 
 
 urlpatterns = [
-       path('', carro, name='carro'),
+      #  path('', carro, name='carro'),
     ]

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'tienda',
     'carro',
+    'Messages'
 ]
 
 MIDDLEWARE = [
@@ -152,7 +153,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL__BACKEND="django.core.mail.backends.smptp.EmailBackend"
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_USE_TLS=True
-EMAIL_PORT=587
+EMAIL_PORT="587"
 EMAIL_HOST_USER="barbargustavomili@gmail.com"
 EMAIL_HOST_PASSWORD="Chocolate10$"
 

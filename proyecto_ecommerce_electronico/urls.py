@@ -27,11 +27,8 @@ urlpatterns = [
     path('autenticacion/',include('autenticacion.urls')),
     path('tienda/',include('tienda.urls')),
     path('carro/',include('carro.urls')),
-
-
-  
-
-]
+    path('message/',include('Messages.urls'))
+    ]
 
 
 if settings.DEBUG:

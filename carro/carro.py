@@ -4,9 +4,8 @@ class Carro:
         self.session=request.session
         carro=self.session.get("carro")
         if not carro:
-          carro=self.session["carro"]={}
-        
-
+            carro=self.session["carro"]={}
+        else:
             self.carro=carro
 
     def agregar(self , producto):
