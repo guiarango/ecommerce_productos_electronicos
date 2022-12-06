@@ -32,26 +32,6 @@
   </head>
 
   <body>
-<<<<<<< HEAD
-    <div style=" text-align:right;margin-right:100px;color:white;">
-
-    {% if user.is_authenticated %}
-
-      Hola {{ user.username }} &nbsp; &nbsp;<a href="{% url 'cerrar_sesion'  %}" style="color:white;">cerrar sesion</a>
-
-    {% else %}
-
-      <a href="{% url 'logear' %}" style="color:white;" > Login </a> &nbsp;&nbsp;&nbsp;<a href="{% url 'Autenticacion' %}"style="color:white;" >Registrate </a>
-
-    {% endif %}
-
-
-
-    </div>
-
-
-=======
->>>>>>> master
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-black">
       <div class="container px-4 px-lg-5">
@@ -74,17 +54,19 @@
                 style="color: rgb(255, 255, 255)"
                 class="nav-link"
                 aria-current="page"
-<<<<<<< HEAD
                 href="http://127.0.0.1:8000/"
-=======
                 href="{% url 'home'%}"
->>>>>>> master
                 >Inicio</a
               >
             </li>
             <li class="nav-item">
               <a style="color: white" class="nav-link" href="{%url 'tienda'%}"
                 >Tienda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a style="color: white" class="nav-link" href="{%url 'categorias'%}"
+                >Categorias</a
               >
             </li>
             <li class="nav-item">
@@ -99,26 +81,6 @@
                 href="{%url 'about-landing'%}"
                 >About</a
               >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                style="color: white"
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Shop</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="{%url 'tienda'%}">Todos los productos</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#!">Categorias</a></li>
-                <li><a class="dropdown-item" href="#!">SALE</a></li>
-              </ul>
             </li>
           </ul>
         <div class="d-flex">

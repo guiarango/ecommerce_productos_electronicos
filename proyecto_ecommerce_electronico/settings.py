@@ -40,19 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Home',
     'Categorias',
-    'autenticacion',
     'About',
     'contacto',
-<<<<<<< HEAD
-=======
     'autenticacion',
     'crispy_forms',
     'tienda',
     'carro',
     'Messages',
     'pedidos',
-    
->>>>>>> master
 ]
 
 MIDDLEWARE = [
