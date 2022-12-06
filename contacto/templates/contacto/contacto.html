@@ -5,21 +5,25 @@
 {% block contenido %}
 
 
-  <div class="contenedorFormulario">
+<section class="py-5 bg-dark">
+    <h4 class="text-white text-center">Envianos tu consulta y te contactaremos en breve!</h4>
+    <div class="contenedorFormulario bg-dark">
+        {% if "valido" in request.GET %}
 
-    {% if "valido" in request.GET %}
- 
-    <p style="color:white;">informacion enviada correctamente , gracias</p>
- 
-    {% endif %}
- 
-   <form action="" method="POST" style="text-align:center;">
-     {% csrf_token %}
-     <table style="color:white; margin:20px auto ;">{{miFormulario.as_table}}</table>
-     <input type="submit" value="Enviar">
-   </form> 
-  </div>
+        <p style="color:white;">informacion enviada correctamente, gracias.</p>
 
+        {% endif %}
+        <div class="container px-5 px-lg-6 mt-6">
+          <div class="row gx-2 gx-lg-2 justify-content-center">
+            <form class="card h-100" action="" method="POST" style="text-align:center;">
+              {% csrf_token %}
+              <table class="card-body" style="color:rgb(62, 62, 62); margin:100px auto ;">{{miFormulario.as_table}}</table>
+              <input class="btn btn-outline-dark" type="submit" value="Enviar mensaje">
+            </form> 
+          </div>
+        </div>
+    </div>
+</section>
   
   
 {% endblock %}
