@@ -7,11 +7,7 @@
  <!-- Header-->
 <header class="d-flex flex-column py-5">
     <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">Todo para armar tu Home Office</h1>
-            <p class="lead fw-normal text-white-50 mb-0">Computación y tecnología</p>
-        </div>
-        <div style="float:right;">
+        <div style="float:center;">
           {% if request.user.is_authenticated %}
 
             {% include "carro/widget.html" %}
@@ -20,15 +16,14 @@
              <div class="alert alert-danger text-center">Login para ver carro</div>
           {% endif %}
         </div> 
+        <div class="text-center text-white">
+          <h1 class="display-6 fw-bolder">Todos nuestros productos</h1>
+      </div>
     </div>
 </header>
 
 <!--Items Parte de arriba-->
 <section class="py-5">
-      <div class="text-center text-white">
-          <h1 class="display-3 fw-bolder text-white-90 mb-0">PRODUCTOS</h1>  
-      </div>
-
     <div class="container px-4 px-lg-5 mt-5">
       
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
