@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Home',
+    'Categorias',
     'About',
     'contacto',
     'autenticacion',
@@ -47,7 +48,6 @@ INSTALLED_APPS = [
     'carro',
     'Messages',
     'pedidos',
-    
 ]
 
 MIDDLEWARE = [
