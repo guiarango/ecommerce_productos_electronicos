@@ -45,3 +45,10 @@ Bar:
 - creamos un archivo context_processor
 -creamos una variable global(settings )
 -creacion de widget para el carro
+-avisos de error
+-vinculamos al carro con login (para iniciar compra debes logearte)
+-corregimos carro y sesiones
+-creamos una app de pedidos
+-registrar en admin pedido y lineapedidos
+-creacion de boton hacer pedido en el carro
+-creacion de vista para procesar el pedido 

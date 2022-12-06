@@ -5,17 +5,19 @@
 {% block contenido %}
 
  <!-- Header-->
- <header class="d-flex flex-column py-5">
+<header class="d-flex flex-column py-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
             <h1 class="display-4 fw-bolder">Todo para armar tu Home Office</h1>
             <p class="lead fw-normal text-white-50 mb-0">Computación y tecnología</p>
         </div>
         <div style="float:right;">
-          {%if request.user.is_authenticated %}
+          {% if request.user.is_authenticated %}
+
             {% include "carro/widget.html" %}
+
           {% else %}  
-             <div class="alert alert-danger text-center ">Login para ver carro</div>
+             <div class="alert alert-danger text-center">Login para ver carro</div>
           {% endif %}
         </div> 
     </div>
@@ -48,7 +50,8 @@
                     </div>
                  <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'carro:agregar' producto.id %}" >AGREGAR AL CARRITO</a></div>
+                      <div class="text-center">
+                        <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-outline-dark mt-auto" >AGREGAR AL CARRITO</a></div>
                     </div>
                 </div>
             </div>
