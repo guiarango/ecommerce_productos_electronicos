@@ -8182,7 +8182,7 @@ fieldset:disabled .btn {
 }
 
 .fw-normal {
-  font-weight: 400 !important;
+  font-weight: 900 !important;
 }
 
 .fw-bold {
@@ -11858,7 +11858,7 @@ fieldset:disabled .btn {
 
 .contenedorFormulario{
 
-  background-color: rgb(51, 43, 205);
+  background-color:blue;
   width:50%;
   margin:10px auto;
   border-radius: 5px;

@@ -21,9 +21,21 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path("", include("Home.urls")),
     path("", include("Categorias.urls")),
 ]
+=======
+    path('', include('Home.urls')),
+    path('about/', include('About.urls')),
+    path('contacto/',include('contacto.urls')),
+    path('autenticacion/',include('autenticacion.urls')),
+    path('tienda/',include('tienda.urls')),
+    path('carro/',include('carro.urls')),
+    path('message/',include('Messages.urls')),
+    path('pedidos/',include('pedidos.urls')),
+    ]
+>>>>>>> master
 
 
 if settings.DEBUG:

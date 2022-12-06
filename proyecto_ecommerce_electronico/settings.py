@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-
+from django.contrib.messages import constants as mensajes_de_error
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -43,6 +43,16 @@ INSTALLED_APPS = [
     'autenticacion',
     'About',
     'contacto',
+<<<<<<< HEAD
+=======
+    'autenticacion',
+    'crispy_forms',
+    'tienda',
+    'carro',
+    'Messages',
+    'pedidos',
+    
+>>>>>>> master
 ]
 
 MIDDLEWARE = [
@@ -68,6 +78,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'carro.context_processor.importe_total_carro',
             ],
         },
     },
@@ -149,8 +160,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL__BACKEND="django.core.mail.backends.smptp.EmailBackend"
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_USE_TLS=True
-EMAIL_PORT=587
+EMAIL_PORT="587"
 EMAIL_HOST_USER="barbargustavomili@gmail.com"
-EMAIL_HOST_PASSWORD="Milagros2009"
+EMAIL_HOST_PASSWORD="Chocolate10$"
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
+
+MESSAGE_TAGS={
+
+    mensajes_de_error.DEBUG:'debug',
+    mensajes_de_error.INFO:'info',
+    mensajes_de_error.SUCCESS:'debug',
+    mensajes_de_error.WARNING:'warning',
+    mensajes_de_error.ERROR:'danger',
+}

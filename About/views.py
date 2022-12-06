@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from About.forms import FundadoresFormulario
 from About.models import Fundador
+from datetime import datetime
 
 # Create your views here.
 
@@ -17,7 +18,7 @@ def crear_fundador(request):
 
         if formulario.is_valid():
             data=formulario.cleaned_data
-            fundador=Fundador(nombre_completo=data["nombre_completo"], historia=data["historia"], imagen=data["imagen"])
+            fundador=Fundador(nombre_completo=data["nombre_completo"], historia=data["historia"], imagen=data["imagen"],created=datetime.now())
             fundador.save()
             return redirect("about-listar-fundador")
 
@@ -40,6 +41,7 @@ def editar_fundador(request,id):
             fundador.nombre_completo=data["nombre_completo"]
             fundador.historia=data["historia"]
             fundador.imagen=data["imagen"]
+            fundador.updated=datetime.now()
             fundador.save()
             return redirect("about-listar-fundador")
 
