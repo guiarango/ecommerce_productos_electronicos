@@ -27,7 +27,8 @@ urlpatterns = [
     path('autenticacion/',include('autenticacion.urls')),
     path('tienda/',include('tienda.urls')),
     path('carro/',include('carro.urls')),
-    path('message/',include('Messages.urls'))
+    path('message/',include('Messages.urls')),
+    path('pedidos/',include('pedidos.urls')),
     ]
 
 
