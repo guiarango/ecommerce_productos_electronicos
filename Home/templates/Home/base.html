@@ -106,9 +106,9 @@
     {% block contenido %} {% endblock %}
 
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Eureka 2022</p>
+    <footer class="py-5 bg-black">
+      <div class="text-center text-white">
+        <h5 class="display-8 fw-bolder text-white-20">Copyright &copy; Eureka 2022</h5>  
       </div>
     </footer>
     <!-- Bootstrap core JS-->
@@ -117,6 +117,7 @@
     <script src="{%static 'home/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     <!-- Core theme JS-->
     <script src="{% static 'Home/js/scripts.js' %}"></script>
-    {%block scripts%}{%endblock%}
+    {%block scripts%}
+    {%endblock%}
   </body>
 </html>
