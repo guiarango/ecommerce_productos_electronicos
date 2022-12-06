@@ -5,4 +5,4 @@ from Categorias.models import *
 
 def categorias(request):
     categorias=CategoriaProd.objects.all()
-    return render(request,'categorias/categorias.html', {"categorias":categorias})
+    return render(request,'Categorias/categorias.html', {"categorias":categorias})
