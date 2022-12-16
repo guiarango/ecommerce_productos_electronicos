@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from About.forms import FundadoresFormulario
 from About.models import Fundador
 from datetime import datetime
+from django.contrib.auth.decorators import permission_required
 
 # Create your views here.
 
@@ -11,7 +12,7 @@ def aboutPage(request):
     contexto={"fundadores":fundadores}
     return render(request, 'About/about.html',contexto)
 
-
+@permission_required("auth.is_staff")
 def crear_fundador(request):
     if request.method=="POST":
         formulario=FundadoresFormulario(request.POST,request.FILES)
@@ -26,12 +27,14 @@ def crear_fundador(request):
     contexto={"formulario":formulario}
     return render(request, 'About/crear_fundador.html',contexto)
 
+@permission_required("auth.is_staff")
 def listar_fundador(request):
     fundadores=Fundador.objects.all()
     contexto={"fundadores":fundadores}
     return render(request, 'About/listar_fundadores.html',contexto)
 
 
+@permission_required("auth.is_staff")
 def editar_fundador(request,id):
     fundador=Fundador.objects.get(id=id)
     if request.method=="POST":
@@ -52,6 +55,7 @@ def editar_fundador(request,id):
         return render(request,"About/editar_fundador.html",{"formulario":formulario,"errores":""})
 
 
+@permission_required("auth.is_staff")
 def eliminar_fundador(request,id):
     fundador=Fundador.objects.get(id=id)
     fundador.delete()
