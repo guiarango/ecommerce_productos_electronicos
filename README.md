@@ -14,22 +14,20 @@ Somos el grupo #10 conformado por: Guillermo Arango, Franco Gidaszewski y Barbar
 
 ### Franco Gidaszewski
 
-#### Backend:
-
-- Creo la app python3 manage.py startapp Base
+- Creo la Home
 - Agrego la app en settings.py
 - Creo la vista de Inicio
 - Conecto las urls de Home con las urls del proyecto
 - Creo una url para la vista de Home/Inicio.
-
-#### Frontend:
-
-- Creo 'templates' en la App
+- Creo la app Categorias
+- Creo 'templates' en Home
 - Agrego static, assets y css para darle estilo a la plantilla
-- Creo 'home.html'
+- Creo 'base.html' y 'home.html'
 - Cargo static en el html
 - Vuelvo a views.py y conecto la plantilla a la vista
 - Agrego nuevos elementos en style.css para modificar a mi gusto la plantilla original.
+- Conecto todos los botones del navegador con las demás apps creadas
+- Creo el video
 
 ### Barbara Pino
 
