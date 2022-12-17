@@ -2,6 +2,10 @@
 
 Somos el grupo #10 conformado por: Guillermo Arango, Franco Gidaszewski y Barbara Pino. Compuesto por estudiantes del curso de Python.
 
+## Link video: https://drive.google.com/file/d/1e0WIex7PV7bzsWtaaPFF1yOQriEbR8od/view?usp=share_link
+
+## Excel casos de pruebas: https://docs.google.com/spreadsheets/d/1hrGr-cxun1CTqLRHfckJiLl-Iz5xuNNv/edit?usp=share_link&ouid=103648220377629668763&rtpof=true&sd=true
+
 ## Labores desarrolladas
 
 ### Guillermo Arango
